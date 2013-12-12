@@ -1,0 +1,309 @@
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 3.0.0
+build: 1549
+*/
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input, textarea, select {
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+html {
+  font-family: "Gotham 4r", "Gotham A", "Gotham B", Helvetica;
+  font-size: 62.5%;
+  color: #6b6d6f;
+  height: 100%;
+  width: 100%; }
+
+body {
+  min-height: 100%;
+  position: relative;
+  padding: 0 10px; }
+
+#content {
+  max-width: 960px;
+  margin: 0 auto; }
+  #content h1 {
+    font-size: 3.6em;
+    font-family: "Gotham 4r", "Gotham A", "Gotham B", Helvetica;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 30px; }
+  #content h2, #content h4 {
+    color: #231f20; }
+  #content h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em; }
+    #content h2.search {
+      margin-top: 20px; }
+  #content h3 {
+    font-size: 1.8em;
+    color: black;
+    font-family: Helvetica; }
+  #content h4 {
+    font-size: 0.9em; }
+  #content p {
+    font-family: Helvetica;
+    font-size: 1.4em;
+    font-weight: 100;
+    line-height: 1.5em;
+    margin-bottom: 1.5em; }
+    #content p em {
+      font-size: 0.85714;
+      font-family: Georgia, serif; }
+
+#logo {
+  width: 130px;
+  margin: 15px 0 10px 0; }
+
+#top {
+  height: 35px;
+  margin-bottom: 10px; }
+  #top input {
+    height: 35px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-family: Georgia, serif;
+    font-size: 1.4em;
+    color: #999999;
+    font-style: italic;
+    padding: 0 10px 0 40px;
+    width: 244px;
+    background: url("../_i/sprites2.png") no-repeat 10px 9px;
+    float: right; }
+
+ul#stateNav a {
+  color: #6b6d6f;
+  text-decoration: none; }
+ul#stateNav li.state {
+  width: 70px;
+  height: 35px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  float: left;
+  margin-right: 6px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  line-height: 35px;
+  font-size: 1.4em;
+  font-color: #6b6d6f;
+  -webkit-box-shadow: 3px 0 3px 0 #f4f4f4;
+  box-shadow: 3px 0 3px 0 #f4f4f4;
+  font-family: Helvetica; }
+ul#stateNav li.state:not(.selected) {
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f4f4f4 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f4f4f4));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f4f4f4 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f4f4f4 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f4f4f4 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #f4f4f4 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+  /* IE6-9 */ }
+ul#stateNav li.selected {
+  background-color: white;
+  color: black; }
+ul#stateNav li:hover {
+  cursor: pointer;
+  background: white;
+  color: black; }
+
+ul#deals .deal {
+  clear: both;
+  height: 79px;
+  overflow: hidden;
+  margin-bottom: 5px; }
+  ul#deals .deal .img {
+    width: 15%;
+    min-width: 104px;
+    float: left; }
+  ul#deals .deal .info {
+    width: 70%;
+    float: left;
+    padding: 1.6em 0 0 0; }
+  ul#deals .deal .link {
+    padding-left: 2%;
+    float: left;
+    width: 13%;
+    margin-top: 12px; }
+    ul#deals .deal .link span {
+      background: url("../_i/sprites2.png") no-repeat 0 -20px;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      position: relative;
+      top: 5px; }
+  ul#deals .deal a {
+    color: #256e9e;
+    text-decoration: none; }
+  ul#deals .deal.nodeal .info {
+    width: 100%;
+    text-align: center; }
+  ul#deals .deal.nodeal h3 {
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-weight: 200; }
+  ul#deals .deal.nodeal p {
+    color: #999999; }
+
+#results {
+  clear: both; }
+
+.deal:nth-of-type(odd) {
+  background-color: #f4f4f4; }
+
+#fakeResults {
+  display: none; }
+
+#centres .ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-top: 2px;
+  padding: .5em .5em .5em .7em;
+  min-height: 0;
+  /* support: IE7 */ }
+#centres .ui-accordion .ui-accordion-icons {
+  padding-left: 2.2em; }
+#centres .ui-accordion .ui-accordion-noicons {
+  padding-left: .7em; }
+#centres .ui-accordion .ui-accordion-icons .ui-accordion-icons {
+  padding-left: 2.2em; }
+#centres .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px; }
+#centres .ui-accordion .ui-accordion-content {
+  padding: 1em 2.2em;
+  border-top: 0;
+  overflow: auto; }
+#centres .ui-accordion .ui-accordion-content-active {
+  min-height: 100%; }
+#centres .ui-accordion-header-icon::before {
+  font-family: monospace;
+  content: "+ ";
+  color: white; }
+#centres .ui-accordion-header-active .ui-accordion-header-icon::before {
+  content: "- ";
+  color: white;
+  font-family: monospace; }
+#centres h2.ui-accordion-header {
+  background-color: black;
+  color: white;
+  margin-bottom: 1px;
+  line-height: 44px;
+  font-family: "Gotham 4r", "Gotham A", "Gotham B", Helvetica;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding-left: 40px;
+  cursor: pointer; }
+#centres h2.ui-state-active {
+  background-color: #d52b1b; }
+
+@media only screen and (max-width: 778px) {
+  body {
+    padding: 0 2%; }
+
+  .logo {
+    float: left; }
+
+  h1 {
+    position: absolute;
+    top: 10px;
+    right: 2%; }
+
+  #top {
+    height: auto;
+    clear: both; }
+    #top input {
+      padding: 0 2% 0 10%;
+      margin: 0 0 0 0;
+      position: relative;
+      clear: both;
+      float: none;
+      width: 88%;
+      border-top-left-radius: 0;
+      -moz-border-radius-topleft: 0; }
+
+  ul#deals .deal {
+    height: auto !important;
+    padding: 10px 0; }
+    ul#deals .deal .img {
+      float: none; }
+    ul#deals .deal .info {
+      width: 100%;
+      float: none; }
+    ul#deals .deal .link {
+      padding-left: 0;
+      float: none;
+      width: 100%;
+      margin-top: 0; }
+
+  .deal:nth-of-type(odd) {
+    background-color: #f4f4f4; } }

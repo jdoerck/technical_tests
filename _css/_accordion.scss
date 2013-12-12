@@ -1,0 +1,64 @@
+@import '_variables';
+
+#centres {
+  .ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-top: 2px;
+    padding: .5em .5em .5em .7em;
+    min-height: 0; /* support: IE7 */
+  }
+  .ui-accordion .ui-accordion-icons {
+    padding-left: 2.2em;
+  }
+  .ui-accordion .ui-accordion-noicons {
+    padding-left: .7em;
+  }
+  .ui-accordion .ui-accordion-icons .ui-accordion-icons {
+    padding-left: 2.2em;
+  }
+  .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    margin-top: -8px;
+  }
+  .ui-accordion .ui-accordion-content {
+    padding: 1em 2.2em;
+    border-top: 0;
+    overflow: auto;
+  }
+  .ui-accordion .ui-accordion-content-active {
+    min-height: 100%;
+  }
+
+  .ui-accordion-header-icon::before {
+    font-family: monospace;
+    content: "+ ";
+    color: $white;
+  }
+
+  .ui-accordion-header-active .ui-accordion-header-icon::before {
+    content: "- ";
+    color: $white;
+    font-family: monospace;
+  }
+
+  h2.ui-accordion-header {
+    background-color: $black;
+    color: $white;
+    margin-bottom: 1px;
+    line-height: 44px;
+    font-family: $fontFam;
+    font-size: $fontSizeBig;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+
+  h2.ui-state-active {
+    background-color: $darkerRed;
+  }
+}

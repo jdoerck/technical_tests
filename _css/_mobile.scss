@@ -1,0 +1,51 @@
+@media only screen and (max-width: 778px) {
+  body {
+    padding: 0 2%;
+  }
+
+  .logo {
+    float: left;
+  }
+  h1 {
+
+    position: absolute;
+    top: 10px;
+    right: 2%;
+  }
+
+  #top {
+    height: auto;
+    clear: both;
+    input {
+      padding: 0 2% 0 10%;
+      margin: 0 0 0 0;
+      position: relative;
+      clear: both;
+      float: none;
+      width: 88%;
+      border-top-left-radius: 0;
+      -moz-border-radius-topleft: 0;
+    }
+  }
+
+  ul#deals .deal  {
+    height: auto !important;
+    padding: 10px 0;
+    .img {
+      float: none;
+    }
+    .info {
+      width: 100%;
+      float: none;
+    }
+    .link {
+      padding-left: 0;
+      float: none;
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .deal:nth-of-type(odd) {
+    background-color: $lightestGray;
+  }
+}

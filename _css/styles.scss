@@ -1,0 +1,216 @@
+@import '_reset';
+@import '_variables';
+
+html {
+  font-family: $fontFam;
+  font-size: 62.5%;
+  color: $darkGray;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  padding: 0 10px;
+}
+
+#content {
+  max-width: $siteWidth;
+  margin: 0 auto;
+
+  h1 {
+    font-size: $fontSizeHuge;
+    font-family: $fontFam;
+    color: $black;
+    font-weight: 200;
+    margin-bottom: 30px;
+  }
+
+  h2, h4 {
+    color: $textBlack;
+  }
+
+  h2 {
+    font-size: $fontSizeBig;
+    margin-bottom: 1em;
+
+    &.search {
+      margin-top: 20px;
+    }
+  }
+
+  h3 {
+    font-size: $fontSizeBig;
+    color: $black;
+    font-family: $fontFam2;
+  }
+
+  h4 {
+    font-size: $fontSizeTiny;
+  }
+
+  p {
+    font-family: $fontFam2;
+    font-size: $fontSizeMed;
+    font-weight: 100;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+
+    em {
+      font-size: $fontSizeSmall / $fontSizeMed;
+      font-family: $fontFamSerif;
+    }
+  }
+
+}
+
+#logo {
+  width: 130px;
+  margin: 15px 0 10px 0;
+}
+
+#top {
+  height: 35px;
+  margin-bottom: 10px;
+
+  input {
+    height: 35px;
+    border: 1px solid $lightGray;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-family: $fontFamSerif;
+    font-size: $fontSizeMed;
+    color: $medGray;
+    font-style: italic;
+    padding: 0 10px 0 40px;
+    width: 244px;
+    background: url('../_i/sprites2.png') no-repeat 10px 9px;
+    float: right;
+  }
+}
+//nav starts
+ul#stateNav {
+  a {
+    color: $darkGray;
+    text-decoration: none;
+  }
+  li.state {
+    width: 70px;
+    height: 35px;
+    border-left: 1px solid $lightGray;
+    border-right: 1px solid $lightGray;
+    border-top: 1px solid $lightGray;
+    float: left;
+    margin-right: 6px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    line-height: 35px;
+    font-size: $fontSizeMed;
+    font-color: $darkGray;
+    -webkit-box-shadow: 3px 0 3px 0 rgba(244,244,244,1);
+    box-shadow: 3px 0 3px 0 rgba(244,244,244,1);
+    font-family: $fontFam2;
+  }
+  li.state:not(.selected) {
+      background: $white; /* Old browsers */
+      background: -moz-linear-gradient(top,  $white 0%, $lightestGray 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,$lightestGray)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  $white 0%,$lightestGray 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  $white 0%,$lightestGray 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  $white 0%,$lightestGray 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  $white 0%,$lightestGray 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 ); /* IE6-9 */
+  }
+  li.selected {
+    background-color: $white;
+    color: $black;
+  }
+  li:hover {
+    cursor: pointer;
+    background: $white;
+    color: $black;
+  }
+  //nav ends
+
+}
+
+ul#deals {
+  .deal {
+    clear: both;
+    height: 79px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    .img {
+      width: 15%;
+      min-width: 104px;
+      float: left;
+    }
+    .info {
+      width: 70%;
+      float: left;
+      padding: 1.6em 0 0 0;
+
+    }
+    .link {
+      padding-left: 2%;
+      float: left;
+      width: 13%;
+      margin-top: 12px;
+      span {
+        background: url('../_i/sprites2.png') no-repeat 0 -20px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 5px;
+
+      }
+    }
+
+    a {
+      color: $linkBlue;
+      text-decoration: none;
+    }
+
+    &.nodeal {
+
+      .info {
+        width: 100%;
+        text-align: center;
+      }
+
+      h3 {
+        color: $medGray;
+        text-transform: uppercase;
+        font-size: $fontSizeBig;
+        letter-spacing: 0.1em;
+        font-weight: 200;
+      }
+
+      p {
+        color: $medGray;
+      }
+    }
+  }
+
+}
+
+#results {
+  clear: both;
+}
+
+.deal:nth-of-type(odd) {
+  background-color: $lightestGray;
+}
+
+#fakeResults {
+  display: none;
+}
+
+@import '_accordion';
+@import '_mobile';
